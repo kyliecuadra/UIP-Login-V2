@@ -51,6 +51,23 @@ body{
 	box-shadow: none;
 }
 
+#toggle{
+	position: absolute;
+	top: 53%;
+	right: 35%;
+	transform: translateY(-50%);
+	width: 3%;
+	height: 3%;
+	background: url(show.png) no-repeat;
+	background-size: contain;
+	cursor: pointer;
+}
+
+#toggle.hide{
+	background: url(hide.png) no-repeat;
+	background-size: contain;
+}
+
 .login-form button{
 	background: #ed682a;
 	border-radius: 5px;
@@ -127,6 +144,15 @@ footer{
 }
 
 /*MEDIA QUERIES*/
+@media all and (min-width: 760px),
+orientation(portrait){
+	#toggle{
+		top: 40%;
+		right: 24%;
+		width: 4.5%;
+		height: 4.5%;
+	}
+}
 @media all and (max-width: 475px),
 orientation(portrait){
 	body{
@@ -140,6 +166,13 @@ orientation(portrait){
 	.login-form form{
 		font-size: 18px;
 		width: 75%;
+	}
+
+	#toggle{
+		top: 41%;
+		right: 15%;
+		width: 5%;
+		height: 5%;
 	}
 
 	.flinks{
