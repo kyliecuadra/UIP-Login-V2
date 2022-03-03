@@ -144,7 +144,7 @@ footer{
 }
 
 /*MEDIA QUERIES*/
-@media all and (min-width: 760px),
+@media all and (max-width: 760px),
 orientation(portrait){
 	#toggle{
 		top: 40%;
