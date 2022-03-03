@@ -51,6 +51,11 @@ body{
 	box-shadow: none;
 }
 
+.login-form input::placeholder{
+	color: #bfbfbf;
+}
+
+
 #toggle{
 	position: absolute;
 	top: 53%;
