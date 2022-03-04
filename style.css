@@ -8,7 +8,12 @@
 	background: #00243e;
 }
 
+html{
+	height: 100%;
+}
+
 body{
+	height: 100%;
 	animation: fadeIn 1s;
 }
 
@@ -73,13 +78,21 @@ body{
 	border: 2px solid #ed682a;
 }
 
-.flinks{
+footer{
+	margin: auto;
+	font-size: 12px;
+	padding-left: 3px;
+	color: #ea8252;
+}
+
+footer .flinks{
+	font-size: 16px;
 	display: flex;
   	justify-content: center;
   	align-items: center;
 }
 
-.flinks a{
+footer .flinks a{
 	display: block;
 	position: relative;
 	overflow: hidden;
@@ -89,7 +102,7 @@ body{
 	padding: 4px;
 }
 
-.flinks a:before {
+footer .flinks a:before {
 	position: absolute;
     content: '';
     left: 0;
@@ -102,7 +115,7 @@ body{
     transform: translateX(100%);
 }
 
-.flinks a:after {
+footer .flinks a:after {
 	position: absolute;
     content: '';
     top: 0;
@@ -115,25 +128,21 @@ body{
      transform: translateX(-100%);
 }
 
-.flinks a:hover:before {
+footer .flinks a:hover:before {
 	border-color: tomato;
 	height: 100%;
 	transform: translateX(0);
 	transition: .15s transform linear, .15s height linear .15s;
 }
 
-.flinks a:hover:after {
+footer .flinks a:hover:after {
 	border-color: tomato;
 	height: 100%;
 	transform: translateX(0);
 	transition: .15s transform linear .15s, .15s height linear .3s;
 }
 
-footer{
-	font-size: 12px;
-	padding-left: 3px;
-	color: #ea8252;
-}
+
 
 /*MEDIA QUERIES*/
 @media all and (max-width: 1160px){
@@ -199,11 +208,13 @@ orientation(portrait){
 		height: 5%;
 	}
 
-	.flinks{
-		font-size: 12px;
-	}
-
 	footer{
+		margin: auto;
 		font-size: 8px;
 	}
+
+	footer .flinks{
+		font-size: 9px;
+	}
+	
 }
